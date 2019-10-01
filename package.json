@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "destroymayor.github.io",
+  "homepage": "https://destroymayor.github.io",
   "dependencies": {
     "antd": "3.22.0",
     "node-sass": "4.12.0",
