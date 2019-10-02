@@ -1,0 +1,27 @@
+$font-size :14px;
+
+.education-item {
+    margin: 0px 0px 15px 10px;
+    display: flex;
+    flex-direction: column;
+
+    h5,
+    p {
+        margin: 0;
+    }
+
+    h5 {
+        font-size: $font-size;
+        line-height: 1.4;
+    }
+
+    .education-year {
+        font-size: $font-size;
+        color: #bbbbbb;
+    }
+
+    .education-content {
+        font-size: $font-size;
+    }
+
+}
