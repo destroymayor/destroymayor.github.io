@@ -6,7 +6,7 @@ const item_2019 = [
     tech_icon: <ReactIcon />,
     github: <GitHubIcon />,
     text: "Todo List",
-    url: "https://github.com/destroymayor/todolist/tree/gh-pages"
+    url: "https://github.com/destroymayor/todolist"
   },
   {
     tech_icon: <ReactIcon />,
