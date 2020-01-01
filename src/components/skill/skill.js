@@ -1,6 +1,6 @@
 import React from "react";
 import "components/skill/skill.scss";
-import { JSIcon, CSSIcon, HTMLIcon, ReactIcon, NodeIcon, GitIcon, Hammer } from "components/utils/icons/icon";
+import { JSIcon, CSSIcon, HTMLIcon, ReactIcon,VueIcon, NodeIcon, GitIcon, Hammer } from "components/utils/icons/icon";
 
 export default () => {
   return (
@@ -22,7 +22,9 @@ export default () => {
           <ReactIcon />
           <span>React · </span>
           <ReactIcon />
-          <span> React Native</span>
+          <span> React Native · </span>
+          <VueIcon />
+          <span>Vue</span>
         </li>
         <li>
           <NodeIcon />

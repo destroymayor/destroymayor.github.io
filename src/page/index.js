@@ -1,5 +1,5 @@
 import React from "react";
-import "components/index.scss";
+import "page/index.scss";
 
 import About from "components/about/about";
 import Skill from "components/skill/skill";
@@ -12,7 +12,6 @@ import Copyright from "components/copyright/copyright";
 export default () => {
   return (
     <div className="root">
-
       <About />
       <Skill />
       <WorkExperience />

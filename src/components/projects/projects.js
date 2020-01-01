@@ -11,11 +11,9 @@ const renderList = (year, list) => {
       <div className="projects-year">{year}</div>
       <div className="projects-item">
         <ul>
-          {list.map((item, index) => (
-            <li key={index.toString()}>
-              <a target="_blank" rel="noopener noreferrer" href={item.url}>
+          {list.map((item) => (
+            <li key={item.text}>
                 {item.github}
-              </a>
               <span>{item.tech_icon}</span>
               <span>{item.text}</span>
             </li>

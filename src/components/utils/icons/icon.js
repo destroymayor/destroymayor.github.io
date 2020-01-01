@@ -1,7 +1,7 @@
 import React from "react";
 import "components/utils/icons/icon.scss";
 
-const NodeIcon = () => {
+export const NodeIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -19,7 +19,7 @@ const NodeIcon = () => {
   );
 };
 
-const ReactIcon = () => {
+export const ReactIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -37,7 +37,13 @@ const ReactIcon = () => {
   );
 };
 
-const JSIcon = () => {
+export const VueIcon = ()=>{
+  return(
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vuejs" className="icon svg-inline--fa fa-vuejs fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"></path></svg>
+  )
+}
+
+export const JSIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -55,7 +61,7 @@ const JSIcon = () => {
   );
 };
 
-const CSSIcon = () => {
+export const CSSIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -73,7 +79,7 @@ const CSSIcon = () => {
   );
 };
 
-const HTMLIcon = () => {
+export const HTMLIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -91,7 +97,7 @@ const HTMLIcon = () => {
   );
 };
 
-const GitHubIcon = () => {
+export const GitHubIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -109,7 +115,7 @@ const GitHubIcon = () => {
   );
 };
 
-const GitIcon = () => {
+export const GitIcon = () => {
   return (
     <svg
       aria-hidden="true"
@@ -128,7 +134,7 @@ const GitIcon = () => {
   );
 };
 
-const Hammer = () => {
+export const Hammer = () => {
   return (
     <svg
       aria-hidden="true"
@@ -146,7 +152,7 @@ const Hammer = () => {
   );
 };
 
-const Briefcase = () => {
+export const Briefcase = () => {
   return (
     <svg
       aria-hidden="true"
@@ -164,7 +170,7 @@ const Briefcase = () => {
   );
 };
 
-const Graduation = () => {
+export const Graduation = () => {
   return (
     <svg
       aria-hidden="true"
@@ -182,7 +188,7 @@ const Graduation = () => {
   );
 };
 
-const Award = () => {
+export const Award = () => {
   return (
     <svg
       aria-hidden="true"
@@ -200,7 +206,7 @@ const Award = () => {
   );
 };
 
-const Bookmark = () => {
+export const Bookmark = () => {
   return (
     <svg
       aria-hidden="true"
@@ -215,5 +221,3 @@ const Bookmark = () => {
     </svg>
   );
 };
-
-export { NodeIcon, ReactIcon, JSIcon, CSSIcon, HTMLIcon, GitHubIcon, GitIcon, Hammer, Briefcase, Graduation, Award, Bookmark };
