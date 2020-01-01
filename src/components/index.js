@@ -12,6 +12,7 @@ import Copyright from "components/copyright/copyright";
 export default () => {
   return (
     <div className="root">
+
       <About />
       <Skill />
       <WorkExperience />
