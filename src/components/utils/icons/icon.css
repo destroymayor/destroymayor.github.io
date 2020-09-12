@@ -1,0 +1,9 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  padding: 0px 5px 0px 5px;
+}
+
+.fa-github {
+  transition: color 0.2s;
+}
