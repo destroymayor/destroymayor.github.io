@@ -1,17 +1,26 @@
-import React from "react";
-import "page/index.scss";
+import React from 'react';
 
-import About from "components/about/about";
-import Skill from "components/skill/skill";
-import WorkExperience from "components/workExperience/workExperience";
-import Education from "components/education/education";
-import Projects from "components/projects/projects";
-import Honors from "components/honors/honors";
-import Copyright from "components/copyright/copyright";
+import styled from 'styled-components';
+
+import About from 'components/about';
+import Skill from 'components/skill';
+import WorkExperience from 'components/work-experience';
+import Education from 'components/education';
+import Projects from 'components/projects';
+import Honors from 'components/honors';
+import Copyright from 'components/copyright';
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.33rem;
+  padding: 10px;
+`;
 
 export default () => {
   return (
-    <div className="root">
+    <Container>
       <About />
       <Skill />
       <WorkExperience />
@@ -19,6 +28,6 @@ export default () => {
       <Projects />
       <Honors />
       <Copyright />
-    </div>
+    </Container>
   );
 };

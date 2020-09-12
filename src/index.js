@@ -1,16 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "index.scss";
-import Page from "page";
-import * as serviceWorker from "serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'index.css';
+import Page from 'page';
+import * as serviceWorker from 'serviceWorker';
 
-
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<Page />, document.getElementById('root'));
 
 //hot reload
 if (module.hot) {
-  module.hot.accept("page", () => {
-    ReactDOM.render(<Page />, document.getElementById("root"));
+  module.hot.accept('page', () => {
+    ReactDOM.render(<Page />, document.getElementById('root'));
   });
 }
 

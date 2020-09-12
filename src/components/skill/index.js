@@ -1,6 +1,29 @@
-import React from "react";
-import "components/skill/skill.scss";
-import { JSIcon, CSSIcon, HTMLIcon, ReactIcon,VueIcon, NodeIcon, GitIcon, Hammer } from "components/utils/icons/icon";
+import React from 'react';
+
+import styled from 'styled-components';
+import {
+  JSIcon,
+  CSSIcon,
+  HTMLIcon,
+  ReactIcon,
+  VueIcon,
+  NodeIcon,
+  GitIcon,
+  Hammer,
+} from 'components/utils/icons/icon';
+
+const Container = styled.ul`
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+  & > li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+`;
 
 export default () => {
   return (
@@ -9,7 +32,7 @@ export default () => {
         <Hammer />
         <span>Skills</span>
       </h3>
-      <ul className="skills-item">
+      <Container>
         <li>
           <JSIcon />
           <span> JavaScript · </span>
@@ -32,7 +55,7 @@ export default () => {
           <GitIcon />
           <span> Git</span>
         </li>
-      </ul>
+      </Container>
     </>
   );
 };
