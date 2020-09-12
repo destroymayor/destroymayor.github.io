@@ -1,8 +1,9 @@
 import React from 'react';
 
 import styled from 'styled-components';
-
-import { Bookmark } from 'components/utils/icons/icon';
+import ItemTitle from 'components/shared/ItemTitle';
+import { ItemWrapper } from 'styles/common';
+import { Bookmark } from 'components/shared/icon';
 
 import {
   project_2017,
@@ -10,7 +11,7 @@ import {
   project_2019,
 } from 'components/projects/projects-data';
 
-const Container = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: row;
 `;
@@ -36,9 +37,8 @@ const ProjectsItem = styled.div`
       align-items: center;
       margin-top: 5px;
 
-      a {
-        color: rgb(102, 102, 102);
-        text-decoration: none;
+      span {
+        padding-right: 5px;
       }
     }
   }
@@ -46,7 +46,7 @@ const ProjectsItem = styled.div`
 
 const project = (year, list) => {
   return (
-    <Container>
+    <ProjectsContainer>
       <ProjectsYear>{year}</ProjectsYear>
       <ProjectsItem>
         <ul>
@@ -59,20 +59,17 @@ const project = (year, list) => {
           ))}
         </ul>
       </ProjectsItem>
-    </Container>
+    </ProjectsContainer>
   );
 };
 
 export default () => {
   return (
-    <>
-      <h3 className="item-title">
-        <Bookmark />
-        <span>Side Projects</span>
-      </h3>
+    <ItemWrapper>
+      <ItemTitle icon={<Bookmark />} title="Side Projects" />
       {project(2019, project_2019)}
       {project(2018, project_2018)}
       {project(2017, project_2017)}
-    </>
+    </ItemWrapper>
   );
 };

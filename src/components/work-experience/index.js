@@ -2,9 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Briefcase } from 'components/utils/icons/icon';
+import ItemTitle from 'components/shared/ItemTitle';
+import { ItemWrapper } from 'styles/common';
+import { Briefcase } from 'components/shared/icon';
 
-const Container = styled.div`
+const WorkExperienceContainer = styled.div`
   margin: 0px 0px 15px 10px;
   font-size: 14px;
 `;
@@ -21,17 +23,14 @@ const WorkExperienceYear = styled.div`
 
 export default () => {
   return (
-    <>
-      <h3 className="item-title">
-        <Briefcase />
-        <span>Work Experience</span>
-      </h3>
-      <Container>
+    <ItemWrapper>
+      <ItemTitle icon={<Briefcase />} title="Work Experience" />
+      <WorkExperienceContainer>
         <WorkExperienceTitle>
           Tagtoo 塔圖科技 - Front-end Engineer
         </WorkExperienceTitle>
         <WorkExperienceYear>2019/09 - 至今</WorkExperienceYear>
-      </Container>
-    </>
+      </WorkExperienceContainer>
+    </ItemWrapper>
   );
 };

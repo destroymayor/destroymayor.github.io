@@ -1,5 +1,5 @@
 import React from 'react';
-import { GitHubIcon, NodeIcon, ReactIcon } from 'components/utils/icons/icon';
+import { GitHubIcon, NodeIcon, ReactIcon } from 'components/shared/icon';
 
 export const project_2019 = [
   {

@@ -2,9 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Graduation } from 'components/utils/icons/icon';
+import { ItemWrapper } from 'styles/common';
+import ItemTitle from 'components/shared/ItemTitle';
+import { Graduation } from 'components/shared/icon';
 
-const Container = styled.div`
+const EducationContainer = styled.div`
   margin: 0px 0px 15px 10px;
   display: flex;
   flex-direction: column;
@@ -23,21 +25,18 @@ const EducationYear = styled.span`
 
 export default () => {
   return (
-    <>
-      <h3 className="item-title">
-        <Graduation />
-        <span>Education</span>
-      </h3>
-      <Container className="education-item">
+    <ItemWrapper>
+      <ItemTitle icon={<Graduation />} title="Education" />
+      <EducationContainer>
         <EducationTitle>NYUST 國立雲林科技大學 - 資訊管理研究所</EducationTitle>
         <EducationYear>2017 - 2019</EducationYear>
         <span>研究方向為自然語言處理(NLP)</span>
-      </Container>
-      <Container className="education-item">
+      </EducationContainer>
+      <EducationContainer>
         <EducationTitle>YPU 元培醫事科技大學 - 資訊管理系</EducationTitle>
         <EducationYear>2013 - 2017</EducationYear>
         <span>專注於資訊醫療領域</span>
-      </Container>
-    </>
+      </EducationContainer>
+    </ItemWrapper>
   );
 };

@@ -1,13 +1,14 @@
 import React from 'react';
-import 'components/utils/icons/icon.css';
 
 export const NodeIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       data-prefix="fab"
       data-icon="node-js"
-      className="icon svg-inline--fa fa-node-js fa-w-14"
+      className="svg-inline--fa fa-node-js fa-w-14"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -23,10 +24,12 @@ export const NodeIcon = () => {
 export const ReactIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       data-prefix="fab"
       data-icon="react"
-      className="icon svg-inline--fa fa-react fa-w-16"
+      className="svg-inline--fa fa-react fa-w-16"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -42,11 +45,13 @@ export const ReactIcon = () => {
 export const VueIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fab"
       data-icon="vuejs"
-      className="icon svg-inline--fa fa-vuejs fa-w-14"
+      className="svg-inline--fa fa-vuejs fa-w-14"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -62,10 +67,12 @@ export const VueIcon = () => {
 export const JSIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       data-prefix="fab"
       data-icon="js-square"
-      className="icon svg-inline--fa fa-js-square fa-w-14"
+      className="svg-inline--fa fa-js-square fa-w-14"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -81,10 +88,12 @@ export const JSIcon = () => {
 export const CSSIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       data-prefix="fab"
       data-icon="css3-alt"
-      className="icon svg-inline--fa fa-css3-alt fa-w-12"
+      className="svg-inline--fa fa-css3-alt fa-w-12"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
@@ -100,10 +109,12 @@ export const CSSIcon = () => {
 export const HTMLIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       data-prefix="fab"
       data-icon="html5"
-      className="icon svg-inline--fa fa-html5 fa-w-12"
+      className="svg-inline--fa fa-html5 fa-w-12"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
@@ -119,10 +130,12 @@ export const HTMLIcon = () => {
 export const GitHubIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       data-prefix="fab"
       data-icon="github"
-      className="icon svg-inline--fa fa-github fa-w-16"
+      className="svg-inline--fa fa-w-16"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 496 512"
@@ -138,11 +151,13 @@ export const GitHubIcon = () => {
 export const GitIcon = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fab"
       data-icon="git-alt"
-      className="icon svg-inline--fa fa-git-alt fa-w-14"
+      className="svg-inline--fa fa-git-alt fa-w-14"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -158,11 +173,13 @@ export const GitIcon = () => {
 export const Hammer = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
       data-icon="hammer"
-      className="icon svg-inline--fa fa-hammer fa-w-18"
+      className="svg-inline--fa fa-hammer fa-w-18"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512"
@@ -178,11 +195,13 @@ export const Hammer = () => {
 export const Briefcase = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
       data-icon="briefcase"
-      className="icon svg-inline--fa fa-briefcase fa-w-16"
+      className="svg-inline--fa fa-briefcase fa-w-16"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -198,11 +217,13 @@ export const Briefcase = () => {
 export const Graduation = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
       data-icon="graduation-cap"
-      className="icon svg-inline--fa fa-graduation-cap fa-w-20"
+      className="svg-inline--fa fa-graduation-cap fa-w-20"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 640 512"
@@ -218,11 +239,13 @@ export const Graduation = () => {
 export const Award = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
       data-icon="award"
-      className="icon svg-inline--fa fa-award fa-w-12"
+      className="svg-inline--fa fa-award fa-w-12"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
@@ -238,11 +261,13 @@ export const Award = () => {
 export const Bookmark = () => {
   return (
     <svg
+      width="24"
+      height="24"
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
       data-icon="bookmark"
-      className="icon svg-inline--fa fa-bookmark fa-w-12"
+      className="svg-inline--fa fa-bookmark fa-w-12"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"

@@ -2,7 +2,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Award } from 'components/utils/icons/icon';
+import { ItemWrapper } from 'styles/common';
+import ItemTitle from 'components/shared/ItemTitle';
+import { Award } from 'components/shared/icon';
 
 import {
   honors_2014,
@@ -11,7 +13,7 @@ import {
   honors_2017,
 } from 'components/honors/honors-data';
 
-const Container = styled.div`
+const HonorsContainer = styled.div`
   display: flex;
   flex-direction: row;
 `;
@@ -40,7 +42,7 @@ const HonorsItem = styled.div`
 
 const renderList = (year, list) => {
   return (
-    <Container>
+    <HonorsContainer>
       <HonorsYear>{year}</HonorsYear>
       <HonorsItem>
         <ul>
@@ -49,21 +51,18 @@ const renderList = (year, list) => {
           ))}
         </ul>
       </HonorsItem>
-    </Container>
+    </HonorsContainer>
   );
 };
 
 export default () => {
   return (
-    <>
-      <h3 className="item-title">
-        <Award />
-        <span>Honors && Seminar</span>
-      </h3>
+    <ItemWrapper>
+      <ItemTitle icon={<Award />} title="Honors && Seminar" />
       {renderList(2017, honors_2017)}
       {renderList(2016, honors_2016)}
       {renderList(2015, honors_2015)}
       {renderList(2014, honors_2014)}
-    </>
+    </ItemWrapper>
   );
 };
