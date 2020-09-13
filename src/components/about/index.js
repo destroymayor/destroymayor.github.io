@@ -64,7 +64,7 @@ export default () => {
         className="profile-image"
       />
       <ProfileIntroduction>
-        <h2>Jared</h2>
+        <h2>Jared test</h2>
         {socialData.map((item) => (
           <ProfileContainer key={item.social}>
             <SocialLink>{item.social}</SocialLink>
