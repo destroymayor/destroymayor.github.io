@@ -17,7 +17,7 @@ const ProfilePicture = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  flex: 0 0 90px;
+  flex: 0 0 150px;
 `;
 
 const ProfileIntroduction = styled.div`
