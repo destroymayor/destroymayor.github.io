@@ -14,8 +14,8 @@ const ProfileHeader = styled.header`
 `;
 
 const ProfilePicture = styled.img`
-  width: 10rem;
-  height: 10rem;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   flex: 0 0 90px;
 `;
@@ -64,7 +64,7 @@ export default () => {
         className="profile-image"
       />
       <ProfileIntroduction>
-        <h2>Jared test</h2>
+        <h2>Jared</h2>
         {socialData.map((item) => (
           <ProfileContainer key={item.social}>
             <SocialLink>{item.social}</SocialLink>
