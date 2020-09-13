@@ -26,10 +26,8 @@ export default () => {
     <ItemWrapper>
       <ItemTitle icon={<Briefcase />} title="Work Experience" />
       <WorkExperienceContainer>
-        <WorkExperienceTitle>
-          Tagtoo 塔圖科技 - Front-end Engineer
-        </WorkExperienceTitle>
-        <WorkExperienceYear>2019/09 - 至今</WorkExperienceYear>
+        <WorkExperienceTitle>Tagtoo - Front-end Engineer</WorkExperienceTitle>
+        <WorkExperienceYear>2019/09 - Present</WorkExperienceYear>
       </WorkExperienceContainer>
     </ItemWrapper>
   );

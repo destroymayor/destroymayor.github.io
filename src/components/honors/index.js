@@ -6,12 +6,7 @@ import { ItemWrapper } from 'styles/common';
 import ItemTitle from 'components/shared/ItemTitle';
 import { Award } from 'components/shared/icon';
 
-import {
-  honors_2014,
-  honors_2015,
-  honors_2016,
-  honors_2017,
-} from 'components/honors/honors-data';
+import { data } from 'components/honors/honors-data';
 
 const HonorsContainer = styled.div`
   display: flex;
@@ -40,29 +35,22 @@ const HonorsItem = styled.div`
   }
 `;
 
-const renderList = (year, list) => {
-  return (
-    <HonorsContainer>
-      <HonorsYear>{year}</HonorsYear>
-      <HonorsItem>
-        <ul>
-          {list.map((item, index) => (
-            <li key={item.toString() + index}>{item}</li>
-          ))}
-        </ul>
-      </HonorsItem>
-    </HonorsContainer>
-  );
-};
-
 export default () => {
   return (
-    <ItemWrapper>
-      <ItemTitle icon={<Award />} title="Honors && Seminar" />
-      {renderList(2017, honors_2017)}
-      {renderList(2016, honors_2016)}
-      {renderList(2015, honors_2015)}
-      {renderList(2014, honors_2014)}
+    <ItemWrapper flexBasis={400}>
+      <ItemTitle icon={<Award />} title="Honors & Seminar" />
+      {data.map((item) => (
+        <HonorsContainer key={item.year}>
+          <HonorsYear>{item.year}</HonorsYear>
+          <HonorsItem>
+            <ul>
+              {item.honors.map((item, index) => (
+                <li key={item + index}>{item}</li>
+              ))}
+            </ul>
+          </HonorsItem>
+        </HonorsContainer>
+      ))}
     </ItemWrapper>
   );
 };

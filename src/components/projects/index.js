@@ -5,11 +5,7 @@ import ItemTitle from 'components/shared/ItemTitle';
 import { ItemWrapper } from 'styles/common';
 import { Bookmark } from 'components/shared/icon';
 
-import {
-  project_2017,
-  project_2018,
-  project_2019,
-} from 'components/projects/projects-data';
+import { data } from 'components/projects/projects-data';
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -44,32 +40,25 @@ const ProjectsItem = styled.div`
   }
 `;
 
-const project = (year, list) => {
-  return (
-    <ProjectsContainer>
-      <ProjectsYear>{year}</ProjectsYear>
-      <ProjectsItem>
-        <ul>
-          {list.map((item, index) => (
-            <li key={item.text + index}>
-              <span>{item.github}</span>
-              <span>{item.tech_icon}</span>
-              <span>{item.text}</span>
-            </li>
-          ))}
-        </ul>
-      </ProjectsItem>
-    </ProjectsContainer>
-  );
-};
-
 export default () => {
   return (
     <ItemWrapper>
       <ItemTitle icon={<Bookmark />} title="Side Projects" />
-      {project(2019, project_2019)}
-      {project(2018, project_2018)}
-      {project(2017, project_2017)}
+      {data.map((item) => (
+        <ProjectsContainer key={item.year}>
+          <ProjectsYear>{item.year}</ProjectsYear>
+          <ProjectsItem>
+            <ul>
+              {item.projects.map((item, index) => (
+                <li key={item.text + index}>
+                  <span>{item.tech_icon}</span>
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ul>
+          </ProjectsItem>
+        </ProjectsContainer>
+      ))}
     </ItemWrapper>
   );
 };

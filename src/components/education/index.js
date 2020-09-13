@@ -13,14 +13,19 @@ const EducationContainer = styled.div`
   font-size: 14px;
 `;
 
-const EducationTitle = styled.h5`
+const EducationTitle = styled.h4`
   margin: 0;
+  font-size: 13px;
   line-height: 1.4;
 `;
 
 const EducationYear = styled.span`
   font-size: 13px;
   color: #969696;
+`;
+
+const EducationField = styled.span`
+  font-size: 13px;
 `;
 
 export default () => {
@@ -30,12 +35,12 @@ export default () => {
       <EducationContainer>
         <EducationTitle>NYUST 國立雲林科技大學 - 資訊管理研究所</EducationTitle>
         <EducationYear>2017 - 2019</EducationYear>
-        <span>研究方向為自然語言處理(NLP)</span>
+        <EducationField>Research in Natural Language Processing</EducationField>
       </EducationContainer>
       <EducationContainer>
         <EducationTitle>YPU 元培醫事科技大學 - 資訊管理系</EducationTitle>
         <EducationYear>2013 - 2017</EducationYear>
-        <span>專注於資訊醫療領域</span>
+        <EducationField>Focus in Medical Information Technology</EducationField>
       </EducationContainer>
     </ItemWrapper>
   );

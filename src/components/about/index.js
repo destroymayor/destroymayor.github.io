@@ -2,24 +2,27 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { ItemWrapper } from 'styles/common';
 import profileImage from 'assets/image/profile.jpg';
 
 const ProfileHeader = styled.header`
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   align-items: center;
+  margin: 0 5px;
+  padding: 0 10px;
+`;
 
-  img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    margin-left: 5px;
-  }
+const ProfilePicture = styled.img`
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  flex: 0 0 90px;
+`;
 
-  h2 {
-    font-size: 30px;
-    margin-left: 10px;
-  }
+const ProfileIntroduction = styled.div`
+  padding-left: 10px;
+  flex: 1 0 300px;
 `;
 
 const ProfileContainer = styled.div`
@@ -54,17 +57,21 @@ const socialData = [
 
 export default () => {
   return (
-    <ItemWrapper>
-      <ProfileHeader>
-        <img src={profileImage} alt="Jared" className="profile-image" />
+    <ProfileHeader>
+      <ProfilePicture
+        src={profileImage}
+        alt="Jared"
+        className="profile-image"
+      />
+      <ProfileIntroduction>
         <h2>Jared</h2>
-      </ProfileHeader>
-      {socialData.map((item) => (
-        <ProfileContainer key={item.social}>
-          <SocialLink>{item.social}</SocialLink>
-          <SocialContent>: {item.link}</SocialContent>
-        </ProfileContainer>
-      ))}
-    </ItemWrapper>
+        {socialData.map((item) => (
+          <ProfileContainer key={item.social}>
+            <SocialLink>{item.social}</SocialLink>
+            <SocialContent>: {item.link}</SocialContent>
+          </ProfileContainer>
+        ))}
+      </ProfileIntroduction>
+    </ProfileHeader>
   );
 };

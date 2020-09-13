@@ -25,8 +25,8 @@ export default () => {
       <Container>
         <Skill />
         <WorkExperience />
-        <Education />
         <Projects />
+        <Education />
         <Honors />
         <Copyright />
       </Container>
