@@ -1,8 +1,4 @@
-import React from 'react';
-
 import styled from 'styled-components';
-
-import profileImage from 'assets/image/profile.jpg';
 
 const ProfileHeader = styled.header`
   display: flex;
@@ -55,14 +51,17 @@ const socialData = [
   },
 ];
 
-export default () => {
+const About = () => {
   return (
     <ProfileHeader>
       <ProfilePicture
-        src={profileImage}
+        src="/static/images/profile.jpg"
+        width={150}
+        height={150}
         alt="Jared"
         className="profile-image"
       />
+
       <ProfileIntroduction>
         <h2>Jared</h2>
         {socialData.map((item) => (
@@ -75,3 +74,5 @@ export default () => {
     </ProfileHeader>
   );
 };
+
+export default About;

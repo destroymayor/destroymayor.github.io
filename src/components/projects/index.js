@@ -1,11 +1,11 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import ItemTitle from 'components/shared/ItemTitle';
-import { ItemWrapper } from 'styles/common';
-import { Bookmark } from 'components/shared/icon';
+import ItemTitle from '@/components/shared/ItemTitle';
+import { ItemWrapper } from '@/styles/common';
+import { Bookmark } from '@/components/shared/icon';
 
-import { data } from 'components/projects/projects-data';
+import { data } from '@/components/projects/projects-data';
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ const ProjectsItem = styled.div`
   }
 `;
 
-export default () => {
+const Projects = () => {
   return (
     <ItemWrapper>
       <ItemTitle icon={<Bookmark />} title="Side Projects" />
@@ -62,3 +62,5 @@ export default () => {
     </ItemWrapper>
   );
 };
+
+export default Projects;

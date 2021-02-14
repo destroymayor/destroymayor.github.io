@@ -2,9 +2,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import ItemTitle from 'components/shared/ItemTitle';
-import { ItemWrapper } from 'styles/common';
-import { Briefcase } from 'components/shared/icon';
+import ItemTitle from '@/components/shared/ItemTitle';
+import { ItemWrapper } from '@/styles/common';
+import { Briefcase } from '@/components/shared/icon';
 
 const WorkExperienceContainer = styled.div`
   margin: 0px 0px 15px 10px;
@@ -21,7 +21,7 @@ const WorkExperienceYear = styled.div`
   color: #969696;
 `;
 
-export default () => {
+const WorkExperience = () => {
   return (
     <ItemWrapper>
       <ItemTitle icon={<Briefcase />} title="Work Experience" />
@@ -32,3 +32,5 @@ export default () => {
     </ItemWrapper>
   );
 };
+
+export default WorkExperience;

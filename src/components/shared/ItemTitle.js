@@ -13,7 +13,7 @@ const Title = styled.h3`
   }
 `;
 
-export default (props) => {
+const ItemTitle = (props) => {
   const { icon, title } = props;
   return (
     <Title>
@@ -22,3 +22,5 @@ export default (props) => {
     </Title>
   );
 };
+
+export default ItemTitle;

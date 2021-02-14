@@ -2,13 +2,13 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import About from 'components/about';
-import Skill from 'components/skills';
-import WorkExperience from 'components/work-experience';
-import Education from 'components/education';
-import Projects from 'components/projects';
-import Honors from 'components/honors';
-import Copyright from 'components/copyright';
+import About from '@/components/about';
+import Skill from '@/components/skills';
+import WorkExperience from '@/components/work-experience';
+import Education from '@/components/education';
+import Projects from '@/components/projects';
+import Honors from '@/components/honors';
+import Copyright from '@/components/copyright';
 
 const Container = styled.div`
   max-width: 650px;
@@ -18,7 +18,7 @@ const Container = styled.div`
   padding: 10px;
 `;
 
-export default () => {
+const Index = () => {
   return (
     <>
       <About />
@@ -33,3 +33,5 @@ export default () => {
     </>
   );
 };
+
+export default Index;

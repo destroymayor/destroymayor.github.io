@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/components/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/public/*": ["public/*"]
+    },
   },
-  "include": ["src"]
+  "exclude": [
+    ".git",
+    "node_modules",
+    "**/dist/*",
+    "**/node_modules/*",
+  ]
 }

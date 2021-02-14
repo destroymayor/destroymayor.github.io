@@ -2,11 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { ItemWrapper } from 'styles/common';
-import ItemTitle from 'components/shared/ItemTitle';
-import { Award } from 'components/shared/icon';
+import { ItemWrapper } from '@/styles/common';
+import ItemTitle from '@/components/shared/ItemTitle';
+import { Award } from '@/components/shared/icon';
 
-import { data } from 'components/honors/honors-data';
+import { data } from '@/components/honors/honors-data';
 
 const HonorsContainer = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ const HonorsItem = styled.div`
   }
 `;
 
-export default () => {
+const Honors = () => {
   return (
     <ItemWrapper flexBasis={400}>
       <ItemTitle icon={<Award />} title="Honors & Seminar" />
@@ -54,3 +54,5 @@ export default () => {
     </ItemWrapper>
   );
 };
+
+export default Honors;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NodeIcon, ReactIcon } from 'components/shared/icon';
+import { NodeIcon, ReactIcon } from '@/components/shared/icon';
 
 export const data = [
   { year: 2020, projects: [{ tech_icon: <NodeIcon />, text: 'Stock Search' }] },

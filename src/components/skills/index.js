@@ -1,8 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import ItemTitle from 'components/shared/ItemTitle';
-import { ItemWrapper } from 'styles/common';
+import ItemTitle from '@/components/shared/ItemTitle';
+import { ItemWrapper } from '@/styles/common';
 
 import {
   JSIcon,
@@ -13,7 +13,7 @@ import {
   NodeIcon,
   GitIcon,
   Hammer,
-} from 'components/shared/icon';
+} from '@/components/shared/icon';
 
 const SkillsContainer = styled.ul`
   list-style-type: none;
@@ -32,7 +32,7 @@ const SkillsContainer = styled.ul`
   }
 `;
 
-export default () => {
+const Skills = () => {
   return (
     <ItemWrapper>
       <ItemTitle icon={<Hammer />} title="Skills" />
@@ -63,3 +63,5 @@ export default () => {
     </ItemWrapper>
   );
 };
+
+export default Skills;

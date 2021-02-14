@@ -2,9 +2,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { ItemWrapper } from 'styles/common';
-import ItemTitle from 'components/shared/ItemTitle';
-import { Graduation } from 'components/shared/icon';
+import { ItemWrapper } from '@/styles/common';
+import ItemTitle from '@/components/shared/ItemTitle';
+import { Graduation } from '@/components/shared/icon';
 
 const EducationContainer = styled.div`
   margin: 0px 0px 15px 10px;
@@ -28,7 +28,7 @@ const EducationField = styled.span`
   font-size: 13px;
 `;
 
-export default () => {
+const Eduction = () => {
   return (
     <ItemWrapper>
       <ItemTitle icon={<Graduation />} title="Education" />
@@ -45,3 +45,5 @@ export default () => {
     </ItemWrapper>
   );
 };
+
+export default Eduction;

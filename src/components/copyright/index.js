@@ -11,10 +11,12 @@ const Container = styled.div`
   border-top: 1px solid rgb(197, 197, 197);
 `;
 
-export default () => {
+const Copyright = () => {
   return (
     <Container className="copyright">
       © Jared {new Date().getFullYear()}{' '}
     </Container>
   );
 };
+
+export default Copyright;
