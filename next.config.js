@@ -6,5 +6,4 @@ module.exports = {
       '/': { page: '/' },
     };
   },
-  assetPrefix: !debug ? '/Next-gh-page-example/' : '',
 };
