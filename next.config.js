@@ -6,5 +6,5 @@ module.exports = {
       '/': { page: '/' },
     };
   },
-  assetPrefix: !debug ? '/resume/' : '',
+  assetPrefix: !debug ? '/destroymayor.github.io/' : '',
 };
